@@ -1,7 +1,7 @@
 {
-  "name": "webpack-setup",
+  "name": "rollchy-ecommerce",
   "version": "1.0.0",
-  "description": "",
+  "description": "Rollchy E-Commerce Academic Project Website (DPS30153 - PSAS)",
   "main": "index.js",
   "scripts": {
     "dev": "webpack --mode development",
