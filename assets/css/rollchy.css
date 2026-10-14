@@ -1,0 +1,1030 @@
+/* ===================================================
+   ROLLCHY BRAND STYLES (Red, Orange & Yellow Theme)
+   DPS30153 E-Commerce Project
+=================================================== */
+
+:root {
+  --rollchy-red: #D92525;
+  --rollchy-red-dark: #B71C1C;
+  --rollchy-orange: #FF6F00;
+  --rollchy-orange-light: #FF9800;
+  --rollchy-yellow: #FFD54F;
+  --rollchy-yellow-bright: #FFC107;
+  --rollchy-cream: #FFFDF9;
+  --rollchy-dark: #212121;
+}
+
+/* Simulation Disclaimer Bar */
+.academic-notice-bar {
+  background: linear-gradient(90deg, var(--rollchy-red-dark), var(--rollchy-red));
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 8px 15px;
+  text-align: center;
+  letter-spacing: 0.3px;
+}
+
+.academic-notice-bar a {
+  color: var(--rollchy-yellow);
+  font-weight: 700;
+  text-decoration: underline;
+  margin-left: 6px;
+}
+
+/* Rollchy Logo Styling */
+.rollchy-header-logo {
+  height: 68px;
+  width: auto;
+  max-width: 140px;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.25s ease;
+}
+
+.rollchy-header-logo:hover {
+  transform: scale(1.05);
+}
+
+.header-bottom {
+  padding: 8px 0;
+  background: #ffffff;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.header-bottom .menu-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header-bottom .main-menu {
+  display: flex !important;
+  align-items: center;
+  padding-left: 0 !important;
+  margin-bottom: 0 !important;
+  margin-left: auto !important;
+  list-style: none;
+}
+
+.header-bottom .main-menu li {
+  margin: 0 16px !important;
+  padding: 0 !important;
+}
+
+.header-bottom .main-menu li a {
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  color: #333333 !important;
+  padding: 8px 4px !important;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.header-bottom .main-menu li a:hover,
+.header-bottom .main-menu li a.active {
+  color: var(--rollchy-red) !important;
+  border-bottom: 2px solid var(--rollchy-red);
+}
+
+/* Rollchy Logo Text */
+.rollchy-logo-text {
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--rollchy-red);
+  letter-spacing: -0.5px;
+  display: inline-flex;
+  align-items: baseline;
+  text-decoration: none !important;
+}
+
+.rollchy-logo-text .accent {
+  color: var(--rollchy-orange);
+}
+
+.rollchy-logo-text .tagline-small {
+  font-size: 11px;
+  font-weight: 600;
+  color: #777;
+  display: block;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* Top bar contact items */
+.header-top-info .whatsapp-link,
+.header-top-info .instagram-link {
+  color: #333;
+  font-weight: 600;
+  font-size: 13px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  margin-right: 20px;
+  transition: color 0.2s ease;
+}
+
+.header-top-info .whatsapp-link:hover {
+  color: #25D366;
+}
+
+.header-top-info .instagram-link:hover {
+  color: #E1306C;
+}
+
+/* Buttons & Badges with Brand Gradient */
+.btn-rollchy {
+  background: linear-gradient(135deg, var(--rollchy-red) 0%, var(--rollchy-orange) 100%) !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 6px;
+  font-weight: 600;
+  padding: 10px 24px;
+  box-shadow: 0 4px 12px rgba(217, 37, 37, 0.25);
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.btn-rollchy:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(217, 37, 37, 0.35);
+  color: #fff !important;
+}
+
+.badge-simulated {
+  background-color: var(--rollchy-yellow-bright);
+  color: #212121;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: inline-block;
+}
+
+/* Active navigation item styling */
+.main-menu li a.active,
+.main-menu li a:hover {
+  color: var(--rollchy-red) !important;
+}
+
+/* Hero Section Enhancements */
+.banner-area {
+  background: linear-gradient(135deg, #FFF9F2 0%, #FFF3E0 100%);
+  padding: 50px 0 40px;
+}
+
+.banner-area__content h2 {
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 1.18;
+  margin-bottom: 20px;
+  color: var(--rollchy-dark);
+}
+
+.banner-area__content p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.banner-area__img {
+  padding: 0 !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-showcase-img {
+  width: 100% !important;
+  height: auto !important;
+  max-height: none !important;
+  border-radius: 18px !important;
+  border: 4px solid #FFFFFF !important;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12) !important;
+  transition: transform 0.3s ease;
+  object-fit: cover !important;
+}
+
+.hero-showcase-img:hover {
+  transform: scale(1.02);
+}
+
+/* About Poster Styling (Eliminates empty bars and aligns height) */
+.about-poster-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.about-poster-img {
+  width: 100% !important;
+  max-width: 440px !important;
+  height: auto !important;
+  border-radius: 16px !important;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.16) !important;
+  border: none !important;
+  background: transparent !important;
+  padding: 0 !important;
+  display: block !important;
+}
+
+
+.banner-features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-top: 35px;
+  padding-top: 25px;
+  border-top: 1px solid rgba(0,0,0,0.06);
+}
+
+.feature-pill {
+  background: #ffffff;
+  padding: 12px 18px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-left: 4px solid var(--rollchy-orange);
+}
+
+.feature-pill i {
+  font-size: 20px;
+  color: var(--rollchy-red);
+}
+
+.feature-pill h6 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: #222;
+}
+
+.feature-pill p {
+  margin: 0;
+  font-size: 12px;
+  color: #666;
+}
+
+/* Product Card Improvements */
+.rollchy-product-card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #f0f0f0;
+}
+
+.rollchy-product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(217, 37, 37, 0.12);
+}
+
+.rollchy-product-card .img-wrapper {
+  position: relative;
+  height: 240px;
+  overflow: hidden;
+  background: #fafafa;
+}
+
+.rollchy-product-card .img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.rollchy-product-card:hover .img-wrapper img {
+  transform: scale(1.05);
+}
+
+.rollchy-product-card .category-pill {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(33, 33, 33, 0.85);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  backdrop-filter: blur(4px);
+}
+
+.rollchy-product-card .card-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.rollchy-product-card h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #212121;
+  margin-bottom: 8px;
+}
+
+.rollchy-product-card .price {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--rollchy-red);
+  margin-bottom: 12px;
+}
+
+.rollchy-product-card .description {
+  font-size: 13.5px;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  flex-grow: 1;
+}
+
+.rollchy-product-card .product-meta {
+  font-size: 12px;
+  background: #FFF8E1;
+  border-left: 3px solid var(--rollchy-yellow-bright);
+  padding: 8px 12px;
+  border-radius: 4px;
+  color: #5D4037;
+  margin-bottom: 16px;
+}
+
+.btn-whatsapp-order {
+  background: #25D366;
+  color: #ffffff !important;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 9px 16px;
+  border-radius: 6px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none !important;
+  transition: background 0.2s;
+}
+
+.btn-whatsapp-order:hover {
+  background: #1eb956;
+}
+
+/* FAQ Accordion Styling */
+.faq-box {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 18px 22px;
+  margin-bottom: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  border: 1px solid #eee;
+  border-left: 4px solid var(--rollchy-red);
+}
+
+.faq-box h5 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #212121;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.faq-box h5 i {
+  color: var(--rollchy-orange);
+  margin-right: 10px;
+}
+
+.faq-box p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* About Us Callout */
+.about-declaration-box {
+  background: #FFF3E0;
+  border: 1px solid #FFE0B2;
+  border-left: 5px solid var(--rollchy-orange);
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-top: 20px;
+}
+
+.about-declaration-box h6 {
+  font-weight: 700;
+  color: #E65100;
+  margin-bottom: 6px;
+}
+
+.about-declaration-box p {
+  font-size: 13px;
+  color: #4E342E;
+  margin: 0;
+}
+
+/* Contact Info Card */
+.contact-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  border: 1px solid #f0f0f0;
+}
+
+.contact-card .info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.contact-card .info-item i {
+  font-size: 20px;
+  color: var(--rollchy-red);
+  margin-top: 3px;
+}
+
+.contact-card .info-item h6 {
+  margin: 0 0 3px 0;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.contact-card .info-item p {
+  margin: 0;
+  font-size: 13.5px;
+  color: #666;
+}
+
+/* Rollchy Modern Footer */
+.rollchy-footer {
+  background: #161719 !important;
+  border-top: 3px solid var(--rollchy-orange);
+  color: #B0B3B8;
+  padding: 60px 0 25px !important;
+}
+
+.rollchy-footer h6 {
+  color: #FFFFFF !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.3px;
+  margin-bottom: 20px !important;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.rollchy-footer h6::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 36px;
+  height: 2.5px;
+  background: var(--rollchy-orange);
+  border-radius: 2px;
+}
+
+.rollchy-footer-links {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.rollchy-footer-links li {
+  margin-bottom: 12px !important;
+}
+
+.rollchy-footer-links li a {
+  color: #A0A3A8 !important;
+  font-size: 14px !important;
+  text-decoration: none !important;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.rollchy-footer-links li a i {
+  font-size: 11px;
+  margin-right: 9px;
+  color: var(--rollchy-orange);
+  transition: transform 0.2s ease;
+}
+
+.rollchy-footer-links li a:hover {
+  color: #FFFFFF !important;
+  transform: translateX(4px);
+}
+
+.rollchy-footer-links li a:hover i {
+  color: var(--rollchy-red);
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  gap: 14px;
+}
+
+.footer-contact-item .icon-circle {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.07);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 17px;
+  color: #FFF;
+  transition: background 0.2s ease;
+}
+
+.footer-contact-item:hover .icon-circle {
+  background: rgba(255, 111, 0, 0.25);
+}
+
+.footer-contact-item .details p {
+  margin: 0;
+  font-size: 14px;
+  color: #E2E4E8;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.footer-contact-item .details p a {
+  color: #FFFFFF !important;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer-contact-item .details p a:hover {
+  color: var(--rollchy-yellow) !important;
+}
+
+.footer-contact-item .details small {
+  color: #8C8F96;
+  font-size: 12px;
+  display: block;
+}
+
+.academic-badge-footer {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-left: 3px solid var(--rollchy-yellow-bright);
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin-top: 20px;
+  backdrop-filter: blur(4px);
+}
+
+.academic-badge-footer .academic-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.academic-badge-footer .academic-icon-pill {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(255, 193, 7, 0.15);
+  color: #FFC107;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  flex-shrink: 0;
+}
+
+.academic-badge-footer .academic-title {
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  line-height: 1.2;
+}
+
+.academic-badge-footer .academic-subtitle {
+  color: #A0A3A8;
+  font-size: 11px;
+}
+
+.academic-badge-footer .academic-text {
+  margin: 0;
+  font-size: 12px;
+  color: #92959B;
+  line-height: 1.55;
+}
+
+.footer-slogan-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 111, 0, 0.12);
+  border: 1px solid rgba(255, 111, 0, 0.25);
+  padding: 5px 12px;
+  border-radius: 20px;
+  margin-bottom: 14px;
+}
+
+.footer-slogan-wrap i {
+  color: var(--rollchy-yellow);
+  font-size: 11px;
+}
+
+.footer-slogan-wrap span {
+  color: #FFF3E0;
+  font-size: 13px;
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 0.3px;
+}
+
+.footer-social-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 14px;
+  border-radius: 30px;
+  font-size: 12.5px;
+  font-weight: 600;
+  text-decoration: none !important;
+  transition: all 0.2s ease;
+  margin-left: 8px;
+}
+
+.footer-social-pill.whatsapp {
+  background: rgba(37, 211, 102, 0.12);
+  color: #25D366 !important;
+  border: 1px solid rgba(37, 211, 102, 0.25);
+}
+
+.footer-social-pill.whatsapp:hover {
+  background: #25D366;
+  color: #FFFFFF !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+}
+
+.footer-social-pill.instagram {
+  background: rgba(225, 48, 108, 0.12);
+  color: #E1306C !important;
+  border: 1px solid rgba(225, 48, 108, 0.25);
+}
+
+.footer-social-pill.instagram:hover {
+  background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF);
+  color: #FFFFFF !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(225, 48, 108, 0.3);
+}
+
+.footer-back-to-top {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  border-radius: 30px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #A0A3A8 !important;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-decoration: none !important;
+  transition: all 0.2s ease;
+  margin-left: 8px;
+}
+
+.footer-back-to-top:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #FFFFFF !important;
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   Comprehensive Responsive Layout for Web, iPad / Tablet, and Phone
+   ========================================================================== */
+
+/* Universal Responsive Hygiene */
+html, body {
+  overflow-x: hidden !important;
+  width: 100% !important;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* --------------------------------------------------------------------------
+   1. TABLET / iPAD SPECIFIC STYLES (768px - 991.98px)
+   -------------------------------------------------------------------------- */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* Header & Top Bar */
+  .header-top {
+    padding: 8px 0;
+  }
+  .header-top-info {
+    justify-content: center;
+    width: 100%;
+  }
+
+  /* Hero Banner */
+  .banner-area {
+    padding: 40px 0 30px;
+  }
+  .banner-area__content {
+    text-align: center;
+    margin-top: 25px;
+  }
+  .banner-area__content h2 {
+    font-size: 38px;
+    line-height: 1.2;
+  }
+  .banner-area__content p.lead {
+    font-size: 15px;
+    max-width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .banner-area__content .d-flex {
+    justify-content: center;
+  }
+  .banner-area__img {
+    max-width: 620px;
+    margin: 0 auto;
+  }
+
+  /* 3 Features Pills */
+  .banner-features-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 12px;
+  }
+  .feature-pill {
+    padding: 10px 14px;
+  }
+  .feature-pill h6 {
+    font-size: 13px;
+  }
+  .feature-pill p {
+    font-size: 11px;
+  }
+
+  /* About Poster */
+  .about-poster-wrapper {
+    margin-bottom: 35px;
+  }
+  .about-poster-img {
+    max-width: 380px !important;
+  }
+  .about-area-text {
+    padding-left: 0 !important;
+  }
+
+  /* Footer */
+  .rollchy-footer {
+    padding: 50px 0 25px !important;
+  }
+  .rollchy-footer-links {
+    margin-bottom: 25px !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   2. MOBILE / PHONE STYLES (max-width: 767.98px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 767.98px) {
+  /* Top Bar */
+  .header-top-info {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    text-align: center;
+  }
+  .header-top-info .whatsapp-link,
+  .header-top-info .instagram-link {
+    margin-right: 10px;
+    font-size: 12.5px;
+  }
+
+  /* Mobile Header Navigation */
+  .mobile-nav {
+    padding: 8px 0;
+  }
+  .rollchy-header-logo {
+    max-height: 48px;
+  }
+  .hamburger-menu a {
+    font-size: 28px !important;
+    padding: 4px 10px;
+    background: rgba(0,0,0,0.04);
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Sidenav mobile drawer */
+  .header-bottom aside .sidenav {
+    max-width: 85vw !important;
+    padding-top: 60px;
+  }
+
+  /* Hero Banner */
+  .banner-area {
+    padding: 30px 0 25px;
+  }
+  .banner-area__content {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .banner-area__content h2 {
+    font-size: 32px !important;
+    line-height: 1.25 !important;
+  }
+  .banner-area__content p.lead {
+    font-size: 14.5px !important;
+    line-height: 1.6;
+    margin: 14px 0 20px !important;
+  }
+  .banner-area__content .d-flex {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px !important;
+  }
+  .banner-area__content .btn-rollchy,
+  .banner-area__content .btn-outline-dark {
+    width: 100%;
+    margin-right: 0 !important;
+    margin-bottom: 0 !important;
+    padding: 13px 20px !important;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .banner-area__img {
+    margin-bottom: 10px;
+  }
+  .hero-showcase-img {
+    border-radius: 14px !important;
+    border-width: 3px !important;
+  }
+
+  /* 3 Features Pills on Mobile */
+  .banner-features-grid {
+    grid-template-columns: 1fr !important;
+    gap: 10px;
+    margin-top: 25px;
+    padding-top: 20px;
+  }
+  .feature-pill {
+    padding: 12px 16px;
+  }
+
+  /* Product Section Headings */
+  .populer-product {
+    padding: 50px 0 30px !important;
+  }
+  .populer-product h2,
+  .about-area h3,
+  .faqs-section h2,
+  .customersreview h2,
+  .contact-section h2 {
+    font-size: 28px !important;
+  }
+
+  /* Product Cards */
+  .rollchy-product-card {
+    margin-bottom: 25px;
+  }
+  .rollchy-product-card .img-wrapper {
+    height: 220px !important;
+  }
+  .rollchy-product-card .card-content {
+    padding: 18px 16px !important;
+  }
+  .rollchy-product-card .price {
+    font-size: 20px !important;
+  }
+  .btn-whatsapp-order {
+    padding: 12px 16px !important;
+    font-size: 14px !important;
+  }
+
+  /* About Section */
+  .about-area {
+    padding: 50px 0 !important;
+  }
+  .about-poster-wrapper {
+    margin-bottom: 30px;
+  }
+  .about-poster-img {
+    max-width: 320px !important;
+  }
+  .about-area-text {
+    padding-left: 0 !important;
+  }
+
+  /* FAQs */
+  .faqs-section {
+    padding: 50px 0 !important;
+  }
+  .faq-box {
+    padding: 18px !important;
+    margin-bottom: 14px !important;
+  }
+  .faq-box h5 {
+    font-size: 15px !important;
+  }
+  .faq-box p {
+    font-size: 13.5px !important;
+  }
+
+  /* Contact Form & Info */
+  .contact-section {
+    padding: 50px 0 !important;
+  }
+  .contact-card {
+    padding: 22px 18px !important;
+    margin-bottom: 25px;
+  }
+  .contact-card input,
+  .contact-card textarea {
+    font-size: 16px !important; /* Prevents auto-zoom on iOS Safari */
+  }
+
+  /* Footer */
+  .rollchy-footer {
+    padding: 45px 0 25px !important;
+  }
+  .rollchy-footer .pr-lg-4 {
+    padding-right: 0 !important;
+    margin-bottom: 25px;
+  }
+  .rollchy-footer-links {
+    margin-bottom: 30px !important;
+  }
+  .footer-contact-item {
+    margin-bottom: 14px;
+  }
+
+  /* Sub-footer bottom bar */
+  .rollchy-footer .row.align-items-center {
+    text-align: center !important;
+  }
+  .rollchy-footer .col-md-5.text-md-right {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+  .footer-social-pill,
+  .footer-back-to-top {
+    margin: 4px 3px !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   3. EXTRA SMALL PHONE / SCREEN OPTIMIZATIONS (max-width: 480px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 480px) {
+  .banner-area__content h2 {
+    font-size: 27px !important;
+  }
+  .banner-area__content p.lead {
+    font-size: 14px !important;
+  }
+  .badge-simulated {
+    font-size: 10px !important;
+    padding: 3px 8px !important;
+  }
+  .about-poster-img {
+    max-width: 275px !important;
+  }
+  .footer-social-pill,
+  .footer-back-to-top {
+    font-size: 11.5px !important;
+    padding: 6px 10px !important;
+  }
+}
+
+
+
+
