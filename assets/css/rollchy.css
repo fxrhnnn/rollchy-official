@@ -1025,6 +1025,268 @@ img {
   }
 }
 
+/* ===================================================
+   VIDEO & MARKETING SHOWCASE SECTION
+   =================================================== */
+.marketing-media-section {
+  background: #ffffff;
+  padding: 70px 0;
+  border-top: 1px solid #f2f2f2;
+}
+
+.video-container-card {
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #eee;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  padding: 24px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.video-responsive-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #111;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+}
+
+.video-responsive-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-details-card {
+  background: #FFFDF9;
+  border: 1px solid #f0e6d6;
+  border-radius: 16px;
+  padding: 28px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.video-details-card h4 {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--rollchy-dark);
+  margin-bottom: 10px;
+}
+
+.video-highlight-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 18px 0;
+}
+
+.video-highlight-list li {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.video-highlight-list li i {
+  width: 24px;
+  font-size: 15px;
+}
+
+/* Digital Marketing Posters Showcase */
+.marketing-poster-card {
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #eee;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.marketing-poster-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12);
+}
+
+.poster-preview-container {
+  position: relative;
+  background: #f7f5f0;
+  cursor: pointer;
+  overflow: hidden;
+  text-align: center;
+  padding: 15px;
+}
+
+.poster-preview-container img {
+  max-height: 440px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.35s ease;
+}
+
+.marketing-poster-card:hover .poster-preview-container img {
+  transform: scale(1.03);
+}
+
+.poster-zoom-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.38);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.poster-preview-container:hover .poster-zoom-overlay {
+  opacity: 1;
+}
+
+.poster-zoom-btn {
+  background: #ffffff;
+  color: var(--rollchy-dark);
+  font-size: 13px;
+  font-weight: 700;
+  padding: 8px 18px;
+  border-radius: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.poster-content-meta {
+  padding: 20px 22px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.poster-content-meta h5 {
+  font-size: 18px;
+  font-weight: 800;
+  color: #212121;
+  margin-bottom: 6px;
+}
+
+.poster-content-meta p {
+  font-size: 13.5px;
+  color: #666;
+  margin-bottom: 14px;
+  flex-grow: 1;
+}
+
+/* ===================================================
+   PRIVACY POLICY SECTION
+   =================================================== */
+.privacy-section {
+  background: #FFFDF9;
+  padding: 70px 0;
+  border-top: 1px solid #f0e6d6;
+}
+
+.privacy-alert-box {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #eae2d5;
+  border-left: 5px solid var(--rollchy-red) !important;
+  padding: 18px 22px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.privacy-card {
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1px solid #eaeaea;
+  padding: 24px;
+  height: 100%;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.privacy-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+}
+
+.privacy-card-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin-bottom: 14px;
+}
+
+.privacy-card h5 {
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--rollchy-dark);
+  margin-bottom: 10px;
+}
+
+.privacy-card p {
+  font-size: 13.5px;
+  color: #555;
+  line-height: 1.65;
+  margin-bottom: 0;
+}
+
+/* Modal lightbox for posters */
+.poster-modal-body {
+  padding: 0;
+  background: #111;
+  text-align: center;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.poster-modal-body img {
+  max-height: 85vh;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 991px) {
+  .poster-preview-container img {
+    max-height: 380px;
+  }
+}
+
+@media (max-width: 767px) {
+  .marketing-media-section,
+  .privacy-section {
+    padding: 50px 0 !important;
+  }
+  .poster-preview-container img {
+    max-height: 320px;
+  }
+  .video-details-card {
+    margin-top: 20px;
+  }
+}
+
 
 
 

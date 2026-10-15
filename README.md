@@ -21,7 +21,7 @@ This website serves as an academic e-commerce showcase demonstrating:
 | :--- | :--- | :--- |
 | **Ramen Roll Original** | RM 3.90 (2 pcs) | Crunchy ramen noodles wrapped in rice paper & nori, topped with cheese drizzle. |
 | **Homemade Muruku Original** | From RM 5.00 (~120g) | Traditional crispy ribbon muruku flakes seasoned with fragrant curry leaves. |
-| **Cheese Popia Crispy** | RM 8.00 (Proposed) | Ultra-crispy golden popia skin chips dusted with rich cheddar cheese powder. |
+| **Cheese Popia Crispy** | RM 8.00 (~100g) | Ultra-crispy golden popia skin chips dusted with rich cheddar cheese powder. |
 
 ---
 
