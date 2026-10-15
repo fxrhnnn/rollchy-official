@@ -299,62 +299,138 @@
 
                 <!-- Two Promotional Digital Posters Showcase Row -->
                 <div class="row mt-4">
-                    <div class="col-sm-12 text-center mb-4">
-                        <span class="badge-simulated mb-2">Digital Campaign Materials</span>
-                        <h3 style="font-size: 28px; font-weight: 800;">Official Marketing Posters</h3>
-                        <p class="text-muted" style="max-width: 600px; margin: 0 auto; font-size: 14.5px;">
-                            Promotional creative posters prepared for social media sharing and campus advertising.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <!-- Poster 1: Ramen Roll Original Promo Poster (Second Image from User) -->
-                    <div class="col-lg-6 col-md-6 mb-4">
-                        <div class="marketing-poster-card">
-                            <div class="poster-preview-container" onclick="openPosterModal('assets/images/rollchy/poster_ramen_roll.jpg', 'Poster 1: Ramen Roll Original Promotion Poster – Crunch Into Happiness!')" title="Click to view full poster">
-                                <img src="assets/images/rollchy/poster_ramen_roll.jpg" alt="Rollchy Ramen Roll Original Promotional Poster" class="img-fluid">
-                                <div class="poster-zoom-overlay">
-                                    <span class="poster-zoom-btn"><i class="fas fa-search-plus"></i> View Full Poster</span>
-                                </div>
-                            </div>
-                            <div class="poster-content-meta">
-                                <div class="d-flex justify-content-between align-items-center mb-2">
-                                    <span class="badge badge-warning px-2 py-1 font-weight-bold" style="background: var(--rollchy-yellow-bright); color: #212121; font-size: 11px; border-radius: 6px;">POSTER 1 &bull; SIGNATURE PROMO</span>
-                                    <span class="text-danger small font-weight-bold" style="font-size: 13px;">2 PCS FOR RM3.90</span>
-                                </div>
-                                <h5>Ramen Roll Original Campaign Poster</h5>
-                                <p>
-                                    “Crunch Into Happiness!” — Featuring the viral Ramen Roll made with authentic Buldak noodles, savory seaweed, sausage, and rich cheese drizzle.
+                    <div class="col-sm-12">
+                        <div class="posters-exhibition-stage">
+                            <!-- Exhibition Stage Header -->
+                            <div class="gallery-stage-header text-center">
+                                <span class="badge-gallery-glow">
+                                    <i class="fas fa-crown mr-1"></i> Official Brand Assets
+                                </span>
+                                <h3 class="gallery-stage-title">
+                                    Rollchy <span>Marketing Posters</span>
+                                </h3>
+                                <p class="gallery-stage-subtitle">
+                                    Promotional creative artwork designed for campus distribution, social media advertising, and DPS30153 project campaign.
                                 </p>
-                                <button type="button" class="btn btn-outline-dark btn-sm font-weight-bold" onclick="openPosterModal('assets/images/rollchy/poster_ramen_roll.jpg', 'Poster 1: Ramen Roll Original Promotion Poster – Crunch Into Happiness!')" style="border-radius: 6px; padding: 7px 14px;">
-                                    <i class="fas fa-expand mr-1"></i> View Full Resolution
-                                </button>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Poster 2: Discover The Rollchy Collection -->
-                    <div class="col-lg-6 col-md-6 mb-4">
-                        <div class="marketing-poster-card">
-                            <div class="poster-preview-container" onclick="openPosterModal('assets/images/rollchy/poster.jpg?v=5', 'Poster 2: Discover The Rollchy Collection – Complete Trio Lineup')" title="Click to view full poster">
-                                <img src="assets/images/rollchy/poster.jpg?v=5" alt="Discover The Rollchy Collection Poster" class="img-fluid">
-                                <div class="poster-zoom-overlay">
-                                    <span class="poster-zoom-btn"><i class="fas fa-search-plus"></i> View Full Poster</span>
+                                <!-- Gallery Filter Tabs -->
+                                <div class="gallery-filter-tabs">
+                                    <button type="button" class="gallery-tab-btn active" id="tabAll" onclick="filterPosters('all')">
+                                        <i class="fas fa-th-large mr-1"></i> Both Posters (2)
+                                    </button>
+                                    <button type="button" class="gallery-tab-btn" id="tabPoster1" onclick="filterPosters('poster1')">
+                                        <i class="fas fa-fire text-danger mr-1"></i> Poster 1: Ramen Roll
+                                    </button>
+                                    <button type="button" class="gallery-tab-btn" id="tabPoster2" onclick="filterPosters('poster2')">
+                                        <i class="fas fa-gem text-warning mr-1"></i> Poster 2: Trio Collection
+                                    </button>
                                 </div>
                             </div>
-                            <div class="poster-content-meta">
-                                <div class="d-flex justify-content-between align-items-center mb-2">
-                                    <span class="badge badge-danger px-2 py-1 font-weight-bold" style="background: var(--rollchy-red); color: #fff; font-size: 11px; border-radius: 6px;">POSTER 2 &bull; FULL TRIO COLLECTION</span>
-                                    <span class="text-muted small font-weight-bold" style="font-size: 13px;">FROM RM3.90</span>
+
+                            <div class="row justify-content-center">
+                                <!-- Poster 1: Ramen Roll Original Promo Poster -->
+                                <div class="col-lg-6 col-md-6 mb-4 poster-col" id="posterCol1">
+                                    <div class="gallery-poster-card">
+                                        <div class="poster-frame-mockup" onclick="openPosterModal('assets/images/rollchy/poster_ramen_roll.jpg', 'Poster 1: Ramen Roll Original Promotion Poster – Crunch Into Happiness!')" title="Click to view full poster">
+                                            <span class="poster-corner-tag tag-hot">
+                                                <i class="fas fa-fire mr-1"></i> Buldak Edition
+                                            </span>
+                                            <div class="poster-inner-matte">
+                                                <img src="assets/images/rollchy/poster_ramen_roll.jpg" alt="Rollchy Ramen Roll Original Promotional Poster" class="img-fluid">
+                                            </div>
+                                            <div class="poster-mockup-overlay">
+                                                <span class="poster-mockup-zoom-btn">
+                                                    <i class="fas fa-search-plus"></i> View High-Res HD
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="gallery-poster-info">
+                                            <div class="poster-info-top">
+                                                <span class="poster-series-badge">
+                                                    <i class="fas fa-bullhorn mr-1"></i> POSTER 01 &bull; SPECIAL PROMO
+                                                </span>
+                                                <span class="poster-price-callout">
+                                                    RM 3.90 <small>/ 2 Pcs</small>
+                                                </span>
+                                            </div>
+                                            <h4>Ramen Roll Original Campaign</h4>
+                                            <p class="tagline-quote">
+                                                “Crunch Into Happiness!” — Featuring our signature Buldak spicy ramen rolls tightly rolled with seaweed, savory sausage, and topped with rich cheese drizzle.
+                                            </p>
+                                            <div class="poster-chips-grid">
+                                                <span class="poster-feature-chip">
+                                                    <i class="fas fa-pepper-hot text-danger"></i> Spicy Buldak Ramen
+                                                </span>
+                                                <span class="poster-feature-chip">
+                                                    <i class="fas fa-cheese text-warning"></i> Melted Cheese Drizzle
+                                                </span>
+                                                <span class="poster-feature-chip">
+                                                    <i class="fas fa-check-circle text-success"></i> 2 Pcs per Container
+                                                </span>
+                                            </div>
+                                            <div class="poster-actions-row">
+                                                <button type="button" class="btn-gallery-action" onclick="openPosterModal('assets/images/rollchy/poster_ramen_roll.jpg', 'Poster 1: Ramen Roll Original Promotion Poster – Crunch Into Happiness!')">
+                                                    <i class="fas fa-expand-arrows-alt mr-2"></i> View Full Poster HD
+                                                </button>
+                                                <a href="assets/images/rollchy/poster_ramen_roll.jpg" target="_blank" class="btn-gallery-secondary" title="Open High-Res Original in New Tab">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <h5>Discover The Rollchy Collection Poster</h5>
-                                <p>
-                                    The full Rollchy assortment showcasing our three signature varieties: Cheese Popia Crispy (RM8), Ramen Roll Original (RM3.90), and Homemade Muruku Original (From RM5).
-                                </p>
-                                <button type="button" class="btn btn-outline-dark btn-sm font-weight-bold" onclick="openPosterModal('assets/images/rollchy/poster.jpg?v=5', 'Poster 2: Discover The Rollchy Collection – Complete Trio Lineup')" style="border-radius: 6px; padding: 7px 14px;">
-                                    <i class="fas fa-expand mr-1"></i> View Full Resolution
-                                </button>
+
+                                <!-- Poster 2: Discover The Rollchy Collection -->
+                                <div class="col-lg-6 col-md-6 mb-4 poster-col" id="posterCol2">
+                                    <div class="gallery-poster-card">
+                                        <div class="poster-frame-mockup" onclick="openPosterModal('assets/images/rollchy/poster.jpg?v=5', 'Poster 2: Discover The Rollchy Collection – Complete Trio Lineup')" title="Click to view full poster">
+                                            <span class="poster-corner-tag tag-collection">
+                                                <i class="fas fa-crown mr-1"></i> Complete Trio
+                                            </span>
+                                            <div class="poster-inner-matte">
+                                                <img src="assets/images/rollchy/poster.jpg?v=5" alt="Discover The Rollchy Collection Poster" class="img-fluid">
+                                            </div>
+                                            <div class="poster-mockup-overlay">
+                                                <span class="poster-mockup-zoom-btn">
+                                                    <i class="fas fa-search-plus"></i> View High-Res HD
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="gallery-poster-info">
+                                            <div class="poster-info-top">
+                                                <span class="poster-series-badge">
+                                                    <i class="fas fa-layer-group mr-1"></i> POSTER 02 &bull; FULL TRIO
+                                                </span>
+                                                <span class="poster-price-callout">
+                                                    From RM 3.90 <small>/ All Items</small>
+                                                </span>
+                                            </div>
+                                            <h4>Discover The Rollchy Collection</h4>
+                                            <p class="tagline-quote">
+                                                “Once Crunch, Always Rollchy” — The all-in-one brand poster presenting Cheese Popia Crispy (RM8), Ramen Roll Original (RM3.90), and Homemade Muruku Original (From RM5).
+                                            </p>
+                                            <div class="poster-chips-grid">
+                                                <span class="poster-feature-chip">
+                                                    <i class="fas fa-utensils text-danger"></i> Ramen Roll (RM3.90)
+                                                </span>
+                                                <span class="poster-feature-chip">
+                                                    <i class="fas fa-cookie text-warning"></i> Muruku (From RM5)
+                                                </span>
+                                                <span class="poster-feature-chip">
+                                                    <i class="fas fa-cheese text-primary"></i> Popia Crispy (RM8)
+                                                </span>
+                                            </div>
+                                            <div class="poster-actions-row">
+                                                <button type="button" class="btn-gallery-action" onclick="openPosterModal('assets/images/rollchy/poster.jpg?v=5', 'Poster 2: Discover The Rollchy Collection – Complete Trio Lineup')">
+                                                    <i class="fas fa-expand-arrows-alt mr-2"></i> View Full Poster HD
+                                                </button>
+                                                <a href="assets/images/rollchy/poster.jpg?v=5" target="_blank" class="btn-gallery-secondary" title="Open High-Res Original in New Tab">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -945,6 +1021,22 @@
             document.getElementById('posterModalDownload').href = imageSrc;
             document.getElementById('posterModalTitle').innerText = title || 'Rollchy Promotional Poster';
             $('#posterModal').modal('show');
+        }
+
+        function filterPosters(type) {
+            $('.gallery-tab-btn').removeClass('active');
+            if (type === 'all') {
+                $('#tabAll').addClass('active');
+                $('#posterCol1, #posterCol2').show().removeClass('col-lg-8 offset-lg-2').addClass('col-lg-6');
+            } else if (type === 'poster1') {
+                $('#tabPoster1').addClass('active');
+                $('#posterCol2').hide();
+                $('#posterCol1').show().removeClass('col-lg-6').addClass('col-lg-8 offset-lg-2');
+            } else if (type === 'poster2') {
+                $('#tabPoster2').addClass('active');
+                $('#posterCol1').hide();
+                $('#posterCol2').show().removeClass('col-lg-6').addClass('col-lg-8 offset-lg-2');
+            }
         }
 
         $(document).ready(function() {
